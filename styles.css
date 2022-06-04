@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9acf8e8;
+}
+
+.card{
+    padding: 0px 40px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 450px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.7);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.card .question{
+    font-weight: 300;
+    font-size: 1.3rem;
+
+}
+
+.card .options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.opts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+input{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.card .options input,
+label
+{
+    cursor: pointer;
+}
+
+.card .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 105px;
+    top:30px;
+    overflow: hidden;
+    background: #dd55ffe8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card .button span{
+   font-weight: 600;
+   font-size: 1.5rem;
+}
+
